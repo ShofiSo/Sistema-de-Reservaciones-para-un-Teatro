@@ -48,4 +48,29 @@ class GestorBoletos {
         }
         return false;
     }
+    public void mostrarReservaciones() {
+        if (reservaciones.isEmpty()) {
+            System.out.println("No hay reservaciones.");
+        } else {
+            System.out.println("Lista de reservaciones:");
+            for (Reservacion r : reservaciones) {
+                System.out.println(r);
+            }
+        }
+    }
 }
+
+public class Teatro {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        GestorBoletos gestor = new GestorBoletos();
+        
+        while (true) {
+            System.out.println("---Menú de opciones---");
+            System.out.println("1. Registrar reservación");
+            System.out.println("2. Cancelar reservación");
+            System.out.println("3. Verificar si un asiento está ocupado");
+            System.out.println("4. Mostrar reservaciones");
+            System.out.println("5. Salir");
+            System.out.print("Seleccione una opción: ");
+        }}}
