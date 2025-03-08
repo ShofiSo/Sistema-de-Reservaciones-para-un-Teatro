@@ -1,5 +1,7 @@
 import java.util.ArrayList;
-//import java.util.List;
+import java.util.List;
+import java.util.Scanner;
+
 class Reservacion {
     String nombre;
     int numeroAsiento;
@@ -8,7 +10,6 @@ class Reservacion {
         this.nombre = nombre;
         this.numeroAsiento = numeroAsiento;
     }
-
     public String toString() {
         return "Cliente: " + nombre + ", Asiento: " + numeroAsiento;
     }
